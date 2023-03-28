@@ -23,5 +23,18 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
+l = []
 
-
+print("Enter up to 10 nums for a list. Enter a negative number to end list.")
+for i in range(0, 10):
+    n = int(input(f"Enter {i + 1}: "))
+    if n > -1:
+        l.append(n)
+    else:
+        print(f"List ended with {len(l)} items.")
+        l.sort()
+        print(l)
+print(f"List completed with {len(l)} items.")
+l.sort()
+f = l[len(l) - 1]
+print(f"The largest number was {f}")
