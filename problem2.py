@@ -26,10 +26,12 @@ word not in list
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
 
-print(f"Your fridge contains {fruit}.")
-x = input("What would you like to eat today? ")
-n = fruit.count(x)
-print(f"You ate {n} {x}s")
-for i in range(0, n):
-    fruit.remove(x)
-print(f"Your fridge contains {fruit}.")
+while fruit:
+    print(f"Your fridge contains {fruit}.")
+    x = input("What would you like to eat today? ")
+    n = fruit.count(x)
+    print(f"You ate {n} {x}s")
+    for i in range(0, n):
+        fruit.remove(x)
+print(f"Your fridge contains {fruit}")
+print("You ate everything in the fridge.")
