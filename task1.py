@@ -24,4 +24,6 @@ The animal at that index is Dog
 
 
 
-animals =
+animals = ['cat', 'fish', 'dog', 'bear', 'turtle']
+c = int(input("Select a number from 0 - 4: "))
+print(f"Position {c} is {animals[c]}")

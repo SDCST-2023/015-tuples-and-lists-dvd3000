@@ -19,3 +19,11 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+
+mainlist = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
+
+print(f"The current list is {mainlist}")
+old = input("Enter the person to kill: ")
+new = input("Enter the replacement: ")
+mainlist[mainlist.index(old)] = new
+print(f"The modified list is {mainlist}")
